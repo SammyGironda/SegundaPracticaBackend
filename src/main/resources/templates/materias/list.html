@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Materias</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div th:replace="~{fragments/header :: header}"></div>
+
+    <main class="container">
+        <h1>Materias</h1>
+        <button onclick="loadMaterias()" class="btn-primary">Cargar Materias</button>
+        <div id="materiasList" class="grid"></div>
+    </main>
+
+    <script src="/js/materias.js"></script>
+</body>
+</html>
