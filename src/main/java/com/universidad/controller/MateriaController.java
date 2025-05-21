@@ -3,6 +3,7 @@ package com.universidad.controller;
 import com.universidad.model.Materia;
 import com.universidad.service.IMateriaService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 
 import com.universidad.dto.MateriaDTO;
@@ -17,6 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/materias")
+@Tag(name = "Materias", description = "Gestión de materias académicas")
 public class MateriaController {
 
     private final IMateriaService materiaService;
